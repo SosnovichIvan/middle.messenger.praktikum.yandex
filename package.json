@@ -1,0 +1,30 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "chat",
+  "scripts": {
+    "start": "parcel build ./src/index.pug && npm run serve",
+    "build": "parcel build",
+    "watch": "parcel watch",
+    "serve": "node src/api/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SosnovichIvan/middle.messenger.praktikum.yandex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SosnovichIvan/middle.messenger.praktikum.yandex/issues"
+  },
+  "homepage": "https://github.com/SosnovichIvan/middle.messenger.praktikum.yandex#readme",
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.7.0",
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  }
+}
