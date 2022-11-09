@@ -1,0 +1,19 @@
+include ../../module/input/input
+include ../../module/button/button
+
+block content
+    case routes
+        when 'register'
+            .form-container
+                h1.login-title Sign up
+                form.register-form(action="/register" method="post")
+                    div
+                        +moduleInput("First Name","Enter first name", "first_name")
+                        +moduleInput("Second Name","Enter second name", "second_name")
+                        +modulePasswordInput("Password","Enter password")
+                    div
+                        +moduleInput("E-mail","Enter e-mail", "email")
+                        +moduleInput("Login","Enter login", "login")
+                        +moduleInput("Phone","Enter phone", "phone")
+                    div
+                        +moduleButton("Sign in", "submit")

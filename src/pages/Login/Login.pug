@@ -1,0 +1,12 @@
+include ../../module/input/input
+include ../../module/button/button
+
+block content
+    case routes
+        when 'login'
+            .form-container
+                h1.login-title Sign in
+                form.login-form(action="/login" method="post")
+                    +moduleInput("E-mail","Enter e-mail", "login")
+                    +modulePasswordInput("Password","Enter password", "password")
+                    +moduleButton("Sign in", "submit")

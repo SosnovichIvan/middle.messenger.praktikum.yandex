@@ -1,7 +1,10 @@
-- var userName = userName;
+- var routes = '400'
 html(lang="ru")
     head
         meta(charset="utf-8")
         title= "Chat  rooms!"
+        link(rel="stylesheet", href="./assets/styled/index.sass")
     body
-        h1 Hello, World! #{userName}
+        include pages/Login/Login
+        include pages/Register/Register
+        include pages/PageNotFound/PageNotFound

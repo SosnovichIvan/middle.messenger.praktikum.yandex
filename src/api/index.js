@@ -3,13 +3,13 @@ const app = express();
 const path = require('path');
 
 const PORT = process.env.PORT || 3000
-app.set('view engine', 'pug');
-app.use(express.static(path.join(__dirname + '/static')))
+
 
 app.get('/', (req,res) => {
-    res.render(path.join(__dirname, '..', 'index'), { userName: 'Ivan'})
+    res.sendFile(path.join(__dirname, '..', '..', 'dist', 'index.html'))
 })
 
+app.use(express.static(path.join(__dirname, '..', '..', '/dist')))
 
 app.listen(PORT, () => {
     console.log(`Example app listening on port ${PORT}`)
