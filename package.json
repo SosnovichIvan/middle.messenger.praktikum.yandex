@@ -4,7 +4,7 @@
   "description": "chat",
   "engines": {
     "node": ">=12"
-  }
+  },
   "scripts": {
     "start": "npm run build && npm run serve",
     "build": "parcel build src/index.pug --no-cache",
