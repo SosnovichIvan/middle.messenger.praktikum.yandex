@@ -1,9 +1,15 @@
-mixin moduleInput(labelText)
+mixin moduleInput(inputLabel, inputPlaceHolder, inputId)
     .default-input
-        label #{labelText}
-        input
+        label(for=inputId) #{inputLabel} 
+        input(
+            id=inputId
+            placeHolder=inputPlaceHolder
+        )
 
-mixin modulePasswordInput(labelText)
-    .password-input
-        label #{labelText}
-        input
+mixin modulePasswordInput(inputLabel, inputPlaceHolder, inputId)
+    .default-input
+        label(for=inputId) #{inputLabel} 
+        input(
+            id=inputId
+            placeHolder=inputPlaceHolder
+        )

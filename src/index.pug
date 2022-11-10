@@ -1,10 +1,14 @@
-- var routes = '400'
+- var routes = 'profile'
 html(lang="ru")
     head
         meta(charset="utf-8")
-        title= "Chat  rooms!"
+        title= "Chat  rooms!1"
         link(rel="stylesheet", href="./assets/styled/index.sass")
     body
-        include pages/Login/Login
-        include pages/Register/Register
-        include pages/PageNotFound/PageNotFound
+        block content
+            include pages/Login/Login
+            include pages/Register/Register
+            include pages/PageNotFound/PageNotFound
+            include pages/PageServerError/PageServerError
+            include pages/Chats/Chats
+            include pages/Profile/Profile

@@ -1,0 +1,23 @@
+include ../../module/input/input
+include ../../module/button/button
+include ../../module/Avatar/avatar
+
+block content
+    case routes
+        when 'profile'
+            .form-container
+                form.profile-form(action="/register" method="post")
+                    +moduleAvatar
+                    div.profile-form_input-block
+                        div.profile-form_input-block__person-info
+                            +moduleInput("First Name","Enter first name", "first_name")
+                            +moduleInput("Second Name","Enter second name", "second_name")
+                            +moduleInput("Display name","Enter display name", "display_name")
+                            +modulePasswordInput("Old Password","Enter old password", "oldPassword")
+                        div.profile-form_input-block__person-info
+                            +moduleInput("E-mail","Enter e-mail", "email")
+                            +moduleInput("Login","Enter login", "login")
+                            +moduleInput("Phone","Enter phone", "phone")
+                            +modulePasswordInput("New Password","Enter new password", "newPassword")
+                    div.profile-form_button
+                        +moduleButton("Save", "profile")

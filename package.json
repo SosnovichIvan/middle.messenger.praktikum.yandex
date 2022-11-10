@@ -2,6 +2,9 @@
   "name": "chat",
   "version": "1.0.0",
   "description": "chat",
+  "engines": {
+    "node": ">=12"
+  }
   "scripts": {
     "start": "npm run build && npm run serve",
     "build": "parcel build src/index.pug --no-cache",
@@ -20,6 +23,7 @@
   },
   "homepage": "https://github.com/SosnovichIvan/middle.messenger.praktikum.yandex#readme",
   "devDependencies": {
+    "@parcel/resolver-glob": "^2.8.0",
     "@parcel/transformer-pug": "^2.7.0",
     "@parcel/transformer-sass": "^2.7.0",
     "@typescript-eslint/eslint-plugin": "^5.42.1",

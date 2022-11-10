@@ -1,2 +1,4 @@
-mixin moduleButton(labelText)
-    button #{labelText}
+mixin moduleButton(buttonTitle, buttonId)
+    button.default-button(id=buttonId)
+        b #{buttonTitle}
+        slot
