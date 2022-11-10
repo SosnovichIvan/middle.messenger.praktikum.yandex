@@ -1,0 +1,45 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "chat",
+  "engines": {
+    "node": ">=12"
+  }
+  "scripts": {
+    "start": "npm run build && npm run serve",
+    "build": "parcel build src/index.pug --no-cache",
+    "watch": "parcel watch",
+    "serve": "node src/api/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SosnovichIvan/middle.messenger.praktikum.yandex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SosnovichIvan/middle.messenger.praktikum.yandex/issues"
+  },
+  "homepage": "https://github.com/SosnovichIvan/middle.messenger.praktikum.yandex#readme",
+  "devDependencies": {
+    "@parcel/resolver-glob": "^2.8.0",
+    "@parcel/transformer-pug": "^2.7.0",
+    "@parcel/transformer-sass": "^2.7.0",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "eslint": "8.22",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.5.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "node-sass-middleware": "^1.0.1",
+    "parcel": "^2.7.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@types/pug": "^2.0.6",
+    "eslint-plugin-pug": "^1.2.4",
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  }
+}
